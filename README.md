@@ -13,3 +13,4 @@ https://www.youtube.com/watch?v=YV_emEzpPyM
 gerador de danfe:
 https://www.webdanfe.com.br/danfe/index.html
 
+svg: https://www.svgrepo.com/vectors/login/
