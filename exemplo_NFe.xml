@@ -3,21 +3,21 @@
     <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
         <infNFe Id="NFe35150300822602000124550010009923461099234656" versao="3.10">
             <ide>
-                <cUF>35</cUF>
-                <cNF>09923465</cNF>
-                <natOp>Venda prod. do estab.</natOp>
-                <indPag>1</indPag>
-                <mod>55</mod>
+                <cUF>estado em numero</cUF>
+                <cNF>codigo aletorio de segurança 8digitos</cNF>
+                <natOp>natureza da operação(venda, compra, transferencia...)</natOp>
+                <indPag>0=Pagamento à vista;1=Pagamento a prazo;2=Outros.</indPag>
+                <mod>sempre modelo 55</mod>
                 <serie>1</serie>
-                <nNF>992346</nNF>
-                <dhEmi>2015-03-27T09:40:00-03:00</dhEmi>
-                <dhSaiEnt>2015-03-27T09:40:00-03:00</dhSaiEnt>
+                <nNF>551000001</nNF>
+                <dhEmi>data e hr da emissão</dhEmi>
+                <dhSaiEnt>data e hr da saida do produto</dhSaiEnt>
                 <tpNF>1</tpNF>
-                <idDest>1</idDest>
-                <cMunFG>3550308</cMunFG>
+                <idDest>1=Operação interna;2=Operação interestadual;3=Operação com exterior.</idDest>
+                <cMunFG>municipio</cMunFG>
                 <tpImp>1</tpImp>
-                <tpEmis>1</tpEmis>
-                <cDV>6</cDV>
+                <tpEmis></tpEmis>
+                <cDV>codigo bem complexo de se calcular</cDV>
                 <tpAmb>2</tpAmb>
                 <finNFe>1</finNFe>
                 <indFinal>1</indFinal>
