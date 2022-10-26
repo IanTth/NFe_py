@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 0 20px;
+    font-size: 12px;
+}
+
+.dados .gerais , .endereço , .contato{
+    margin-bottom: 30px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dados .gerais .title, .endereço .title , .contato .title{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 10px;
+    width: 100%;
+    
+}
+
+.dados .gerais .dados-box, .endereço .dados-box , .contato .dados-box{
+    margin: 0 10px 20px 10px;
+}
