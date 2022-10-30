@@ -5,21 +5,15 @@ import xml.etree.ElementTree as ET
 # Create your views here.
 
 
-def home(request):
+def login(request):
     
     return render(request, 'index.html')
 
-def gender(request):
+def register(request):
 
-    if request.method == "POST":
+    return render(request, 'register.html')
 
-        tree = ET.parse('exemplo_NFe.xml')
-        root = tree.getroot()
+def home(request):
 
+    return render(request, 'home.html')
 
-
-    
-
-
-
-    return render(request, 'xmlForm.html')

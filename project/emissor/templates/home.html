@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- MultiStep Form -->
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="">Home</a></li>
+          <li><a class="menu__item" href="">Notas Fiscais</a></li>
+          <li><a class="menu__item" href="">Emitir Nota</a></li>
+          <li><a class="menu__item" href="">Produtos</a></li>
+          <li><a class="menu__item" href="">Clientes</a></li>
+          <li><a class="menu__item" href="">Ajuda</a></li>
+          <li><a class="menu__item" href="">Sair</a></li>
+        </ul>
+      </div>
+<div class="container-fluid" id="grad1">
+    <div class="row justify-content-center mt-0">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                <br>
+                <div class="row">
+                    <div class="col-md-12 mx-0">
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active" id="account"><strong>Informações</strong></li>
+                                <li id="personal"><strong>Destinatário</strong></li>
+                                <li id="payment"><strong>Produto</strong></li>
+                                <l0i id="confirm"><strong>Emitido</strong></li>
+                            </ul>
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title">Informações da nota</h2>
+                                    
+                                    <div class="dados-box">
+
+                                        <div class="tSaida">
+                                            <label>Tipo de saida</label>
+                                            <select>
+                                                <option value="valor1" selected>Emissão Própria</option>
+                                                <option value="valor2" >xxxx</option>
+                                            </select>
+                                        </div>
+                                        <div class="serie">
+                                            <label>Série</label>
+                                            <input type="text" placeholder="1">
+                                        </div>
+                                        <div class="num">
+                                            <label>Número</label>
+                                            <input type="text" placeholder="000001">
+                                        </div>
+                                        <div class="loja">
+                                            <label>Loja</label>
+                                            <select>
+                                                <option value="valor1" selected>Todas as lojas</option>
+                                                <option value="valor2" >Loja x</option>
+                                            </select>
+                                        </div>
+                                        <div class="unNegoc">
+                                            <label>Unid. de negocio</label>
+                                            <select>
+                                                <option value="valor1" selected>Nenhuma unidade</option>
+                                                <option value="valor2" >xxxx</option>
+                                            </select>
+                                        </div>
+                                        <div class="natOp">
+                                            <label>Natureza da operação</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dtEmis">
+                                            <label>Data de emissão</label>
+                                            <input type="date">
+                                        </div>
+                                        <div class="hrEmis">
+                                            <label>Hora da emissão</label>
+                                            <input type="time" >
+                                        </div>
+                                        <div class="dtSaida">
+                                            <label>Data de saída</label>
+                                            <input type="date">
+                                        </div>
+                                        <div class="hrSaida">
+                                            <label>Hora da saída</label>
+                                            <input type="time" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next action-button" value="Seguir"/>
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title">Dados do destinatário</h2>
+                                    
+                                    <div class="dados-box">
+                                        <div class="dest">
+                                            <label>Cliente</label>
+                                            <select>
+                                                <option value="valor1" selected>Cliente x</option>
+                                                <option value="valor2" >xxxx</option>
+                                            </select>
+                                        </div>
+                                        <div class="dest">
+                                            <label>Tipo de documento</label>
+                                            <select>
+                                                <option value="valor1" selected>CNPJ</option>
+                                                <option value="valor2" >CPF</option>
+                                            </select>
+                                        </div>
+                                        <div class="campo">
+                                            <label>CNPJ</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="campo">
+                                            <label>Razão social</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="dest">
+                                            <label>Tipo de contribuinte</label>
+                                            <select>
+                                                <option value="valor1" selected>selecione</option>
+                                                <option value="valor2" >xxx</option>
+                                            </select>
+                                        </div>
+                                        <h2 class="fs-title">Endereço</h2>
+                                        <div class="campo">
+                                            <label>CEP</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="campo">
+                                            <label>UF</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="campo">
+                                            <label>Município</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="campo">
+                                            <label>Bairro</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="campo">
+                                            <label>Endereço</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="campo">
+                                            <label>Número</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="campo">
+                                            <label>Complemento</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <input type="button" name="previous" class="previous action-button-previous" value="Voltar"/>
+                                <input type="button" name="next" class="next action-button" value="Seguir"/>
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                   
+
+                                    <h2 class="fs-title">Produto</h2>
+                                    <div class="produto">
+                                        <label>Itens da nota fiscal</label>
+                                        <select>
+                                            <option value="valor1" selected>Produto x</option>
+                                            <option value="valor2" >xxxx</option>
+                                        </select>
+                                    </div>
+                                    <div class="campo">
+                                        <label>Quantidade</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="campo">
+                                        <label>Valor Unitário</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="campo">
+                                        <label>Valor Total</label>
+                                        <input type="text">
+                                    </div>
+
+                                    <h2 class="fs-title">Transporte</h2>
+
+                                    <div class="produto">
+                                        <label>Modaldiade</label>
+                                        <select>
+                                            <option value="valor1" selected>Selecione</option>
+                                            <option value="valor2" >xxxx</option>
+                                        </select>
+                                    </div>
+                                    <div class="produto">
+                                        <label>Transportadora</label>
+                                        <select>
+                                            <option value="valor1" selected>Selecione</option>
+                                            <option value="valor2" >xxxx</option>
+                                        </select>
+                                    </div>
+
+
+
+                                </div>
+                                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                                <input type="button" onclick="" name="make_payment" class="next action-button" value="Emitir"/>
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title text-center">Pronto!</h2>
+                                    <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3">
+                                            <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image">
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-7 text-center">
+                                            <h5>Nota emitida com sucesso.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/static/js/home.js"></script>
+</body>
+</html>
