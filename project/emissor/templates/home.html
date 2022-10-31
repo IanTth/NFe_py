@@ -34,7 +34,7 @@
                 <br>
                 <div class="row">
                     <div class="col-md-12 mx-0">
-                        <form id="msform">
+                        <form id="msform" method="POST"> {% csrf_token %}
                             <!-- progressbar -->
                             <ul id="progressbar">
                                 <li class="active" id="account"><strong>Informações</strong></li>
@@ -42,7 +42,9 @@
                                 <li id="payment"><strong>Produto</strong></li>
                                 <l0i id="confirm"><strong>Emitido</strong></li>
                             </ul>
+                            
                             <!-- fieldsets -->
+
                             <fieldset>
                                 <div class="form-card">
                                     <h2 class="fs-title">Informações da nota</h2>
@@ -58,7 +60,7 @@
                                         </div>
                                         <div class="serie">
                                             <label>Série</label>
-                                            <input type="text" placeholder="1">
+                                            <input name="serie" type="text" placeholder="1">
                                         </div>
                                         <div class="num">
                                             <label>Número</label>
@@ -98,6 +100,7 @@
                                             <label>Hora da saída</label>
                                             <input type="time" >
                                         </div>
+                                        {{arquivo}}
                                     </div>
                                 </div>
                                 <input type="button" name="next" class="next action-button" value="Seguir"/>
@@ -218,7 +221,7 @@
 
                                 </div>
                                 <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
-                                <input type="button" onclick="" name="make_payment" class="next action-button" value="Emitir"/>
+                                <a href="javascript:{}" id="submit" onClick="document.getElementById('msform').submit();"> Enviar</a>
                             </fieldset>
                             <fieldset>
                                 <div class="form-card">

@@ -34,24 +34,24 @@
               <h3>Fazer Login</h3>
               <p class="mb-4">Preencha os campos com suas credenciais para acessar o sistema.</p>
             </div>
-            <form id="login" method="post"> {% csrf_token %}
+            <form id="login" method="POST"> {% csrf_token %}
               <div class="form-group first">
-                <label for="username">E-mail</label>
-                <input type="text" class="form-control" id="username">
+                <label>E-mail</label>
+                <input type="text" class="form-control" name="email">
 
-              </div>
+              </div>  
               <div class="form-group last mb-4">
-                <label for="password">Senha</label>
-                <input type="password" class="form-control" id="password">
+                <label>Senha</label>
+                <input type="password" class="form-control" name="senha">
                 
               </div>
               
               <div class="d-flex mb-5 align-items-center">
                 <label class="control control--checkbox mb-0"><span class="caption">Lembar-me</span>
-                  <input type="checkbox" checked="checked"/>
+                  <input type="checkbox"/>
                   <div class="control__indicator"></div>
                 </label>
-                <span class="ml-auto"><a href="{'registrar'}" class="register">Registrar-se</a></span> 
+                <span class="ml-auto"><a href="{registrar}" class="register">Registrar-se</a></span> 
               </div>
 
                 <div id="entrar-btn"  class="row justify-content-center">
@@ -63,7 +63,7 @@
                        display: flex; flex-direction:
                         row; align-items: center;
                          justify-content: center;"
-                          href="{pagina_inicial}">Entrar</a>
+                          href="javascript:{}" id="submit" onClick="document.getElementById('login').submit();">Entrar</a>
                 </div>
 
               </div>
