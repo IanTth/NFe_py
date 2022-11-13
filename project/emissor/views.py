@@ -1,8 +1,9 @@
-from django.contrib.auth.models import User
+import xml.etree.ElementTree as ET
+
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render
-import xml.etree.ElementTree as ET
 
 
 def login(request):
@@ -10,20 +11,14 @@ def login(request):
     if request.method == "GET":
         return render(request, 'index.html')
     else:
-        email = request.POST.get('email')
-        password = request.POST.get('senha')
+        return render(request, 'home.html')
+        #email = request.POST.get('email')
+        #password = request.POST.get('senha')
 
-        user = authenticate(email=email, password=password)
+        #user = authenticate(email=email, password=password)
 
-        if user:
-            login(request, user)
-            return HttpResponse('logado')
-        else:
-            return HttpResponse('senha ou email inválido')
 
         
-       
-
 
 
 def register(request):
@@ -46,8 +41,9 @@ def register(request):
         return HttpResponse('usuário cadastrado')
 
 def home(request):
-    if request.user.is_authenticated:
-        return render(request, 'home.html')
-    else:
-        return HttpResponse('vc n esta logado')
+    return render(request, 'home.html')
+    #if request.user.is_authenticated:
+        #return render(request, 'home.html')
+    #else:
+        #return HttpResponse('vc n esta logado')
     
